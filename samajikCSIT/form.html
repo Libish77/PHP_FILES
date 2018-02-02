@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+
+<body>
+	<form>
+	<fieldset>
+		<legend>Info Form</legend>
+
+		Full Name: <input type="text" name="" placeholder="Enter Full Name" required>
+				<hr>
+		Email :<input type="email" name="" placeholder="Email" required>
+				<hr>
+		Password: <input type="password" name="" placeholder="Enter Password" required>
+				<hr>
+		Contact: <input type="number" name="" placeholder="Enter Contact Here" required>
+				<hr>
+		Gender: <input type="radio" name="gender" value="male" checked> Male
+				<input type="radio" name="gender" value="female"> Female
+				<hr>
+		Interest: Singing <input type="checkbox" name="interest[]" value="singing">
+				  Dancing <input type="checkbox" name="interest[]" value="danciing">
+				  <hr>
+		Country: <select>
+				<option>--Select Country--</option>
+				<option value="npl">Nepal</option>
+				<option value="usa">America</option>
+				</select>
+				<hr>		  
+		Photo: <input type="file" name="photo" required>	
+				<hr>
+		About: <textarea required cols="50" rows="10" placeholder="Please Enter a Description"></textarea>				<hr>
+			<button type="submit">Save</button>
+			<button type="reset">Reset</button>
+	</fieldset>
+</form>
+</body>	
+
+
+</html>

@@ -5,7 +5,12 @@ if(isset($_POST['uploadbtn']))
 {
 	$oldName = $_FILES['photo']['name'];
 	$temp = explode('.', $oldName);
-	if($temp[1]=='jpg'|$temp[1]=='png'|$temp[1]=='jpeg'|$temp[1]=='bmp')
+	//print_r( $temp);
+    $file = '/path/to/your/file';
+    $filesize = filesize($file);
+
+    echo "The size of your file is $filesize bytes.";
+	if($temp[1]=='jpg' || $temp[1]=='PNG' || $temp[1]=='png'|| $temp[1]=='jpeg'|| $temp[1]=='bmp')
 
 	    {
         $newName =
